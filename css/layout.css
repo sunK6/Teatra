@@ -1,0 +1,212 @@
+body:not(.gnb--open) #header .logo a {
+    background-image: url(../img/common/logo_teatra_wt_75x75.png);
+}
+body.gnb--open #header .gnb_btn .top {
+    transform: rotate(45deg) translateX(-50%);
+    width: 50px;
+    top: 15px;
+}
+body.gnb--open #header .gnb_btn .bot {
+    transform: rotate(-45deg) translateX(-50%);
+    width: 50px;
+    top: 15px;
+    margin-left: 0;
+}
+body.gnb--open #header .gnb_btn .mid {
+    display: none;
+}
+body:not(.gnb--open) #header .gnb_btn span {
+    background: #fff;
+}
+#header {
+    position: fixed;
+    width: 100%;
+    max-width: 1920px;
+    margin: 0 auto;
+    top: 0;
+    z-index: 10;
+}
+#header .logo {
+    width: 70px;
+    position: absolute;
+    top: 75px;
+    left: 80px;
+    z-index: 1;
+}
+#header .logo a {
+    display: block;
+    height: 70px;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-image: url(../img/common/logo_teatra_bk_75x75.png);
+    background-size: 70px;
+    font-size: 0;
+}
+#header .gnb_btn {
+    width: 43px;
+    height: 33px;
+    position: absolute;
+    top: 89px;
+    right: 80px;
+    z-index: 1;
+}
+#header .gnb_btn span {
+    height: 3px;
+    display: block;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 3px;
+    background: #000;
+    transform-origin: left center;
+}
+#header .gnb_btn .top {
+    width: 35px;
+    top: 4px;
+}
+#header .gnb_btn .mid {
+    width: 25px;
+    top: 15px;
+    margin-left: 5px;
+}
+#header .gnb_btn .bot {
+    width: 25px;
+    top: 26px;
+    margin-left: 5px;
+}
+#header .menu {
+    position: absolute;
+    top: 238px;
+    left: 98px;
+    transform: rotate(-90deg) translateX(-100%);
+    transform-origin: top left;
+}
+#header .menu li {
+    float: left;
+    margin-left: 60px;
+}
+#header .menu li a {
+    display: block;
+    font-weight: 400;
+    font-size: 23px;
+    color: #000;
+    position: relative;
+    font-family: 'DidotBold', 'NanumBarunGothic', sans-serif;
+}
+#header .menu li a::before {
+    content: '';
+    display: block;
+    position: absolute;
+    left: 0;
+    bottom: -15px;
+    background-color: #000;
+    width: 100%;
+    height: 1px;
+    display: none;
+}
+#header .menu li a.on::before,
+#header .menu li a:hover::before {
+    display: block;
+}
+#header .gnb {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    min-height: 800px;
+    background-color: rgb(240,237,228);
+    display: none;
+}
+#header .gnb ul {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin-top: -40px;
+}
+#header .gnb li {
+    margin-top: 27px;
+    text-align: center;
+}
+#header .gnb li:first-child {
+    margin-top: 0;
+}
+#header .gnb li a{
+    position: relative;
+    display: inline-block;
+    font-weight: 400;
+    font-size: 46px;
+    color: rgb(112,108,98);
+    transition: all .5s ease;
+    text-align: center;
+    font-family: 'DidotBold', 'NanumBarunGothic', sans-serif;
+}
+#header .gnb li a::before {
+    content: '';
+    display: block;
+    position: absolute;
+    width: 100%;
+    left: 0;
+    bottom: 0;
+    height: 2px;
+    opacity: 0;
+    background: transparent;
+}
+#header .gnb li a:hover {
+    color: #000;
+}
+#header .gnb li a:hover::before {
+    opacity: 1;
+    background: rgb(10,10,10);
+}
+
+#header .gnb .foot {
+    position: absolute;
+    bottom: 35px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+#header .gnb .sns-box a {
+    background-repeat: no-repeat;
+    background-position: center center;
+    width: 30px;
+    height: 30px;
+    display: inline-block;
+    vertical-align: top;
+    margin-left: 18px;
+}
+#header .gnb .sns-box {
+    font-size: 0;
+    text-align: center;
+    width: 100%;
+}
+#header .gnb .sns-box .sns_instagram {
+    background-image: url(../img/common/sns_instagram_30x30.png);
+    margin-left: 0;
+}
+#header .gnb .sns-box .sns_youtube {
+    background-image: url(../img/common/sns_youtube_30x30.png);
+}
+#header .gnb .sns-box .sns_facebook {
+    background-image: url(../img/common/sns_facebook_30x30.png);
+}
+#header .gnb .copyright {
+    font-size: 14px;
+    font-weight: 400;
+    color: rgba(0,0,0,0.5);
+    margin-top: 16px;
+    font-family: 'Nanum Myeongjo', 'NanumBarunGothic', sans-serif;
+}
+
+#footer {
+    padding: 36px 0;
+    background-color: rgb(240,237,228);
+}
+#footer .copyright {
+    font-family: 'Nanum Myeongjo', 'NanumBarunGothic', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    color: rgba(0,0,0,0.8);
+    text-align: center;
+}
